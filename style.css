@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+h4{
+    color: rgb(86, 255, 80);
+    font-style: oblique;
+    font-size: 50px;
+}
+
+main::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0,0.5);
+    z-index: -1;
+}
+
+.video-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.stl{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translatex(-50%);
+    text-align: center;
+}
+
+.btn{
+   position: relative;
+   padding: 5px;
+   outline: none;
+   border: none;
+   cursor: pointer;
+   display: inline-flex;
+   justify-content: space-between;
+   width: 100px;
+   border-radius: 8px;
+   font-size: 16px;
+   color: rgb(32, 32, 32);
+   margin-top: 20px;
+}
+.switch{
+    position: absolute;
+    height: 90%;
+    width: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2%;
+    background: rgb(81, 209, 109);
+    border-radius: 9px;
+    transition: all .3s linear;
+}
+
+.slide{
+    left: 50%;
+}
